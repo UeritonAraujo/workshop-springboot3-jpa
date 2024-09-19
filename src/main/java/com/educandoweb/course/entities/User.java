@@ -3,10 +3,20 @@ package com.educandoweb.course.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User implements Serializable{								// Serializable para transformar os objetos em uma cadeia de bytes -> P/ poderem ser trafegados em redes, gravados em arquivos 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_user")
+public class User implements Serializable{					// Serializable para transformar os objetos em uma cadeia de bytes -> P/ poderem ser trafegados em redes, gravados em arquivos 
 	
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String email;
