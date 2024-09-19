@@ -13,7 +13,7 @@ import com.educandoweb.course.entities.User;
 import com.educandoweb.course.services.UserService;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping(value = "/users")											// Nome dado na url, para buscar os usuários pelo Id
 public class UserResource {
 	
 	@Autowired
@@ -26,7 +26,7 @@ public class UserResource {
 		return ResponseEntity.ok().body(list);
 	}
 	
-	@GetMapping(value = "/{id}")
+	@GetMapping(value = "/{id}")											// Buscar o objeto pelo Id
 	public ResponseEntity<User> findById(@PathVariable Long id){
 		User obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
