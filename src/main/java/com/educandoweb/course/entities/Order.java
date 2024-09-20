@@ -28,6 +28,7 @@ public class Order implements Serializable{
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
 	private Instant moment;
 	
+	// Associação com enum
 	private Integer orderStatus;
 	
 	@ManyToOne													// Anotação p/ apontar no bando de dados que será uma associação com muitos para um (cliente com muitos pedidos)
