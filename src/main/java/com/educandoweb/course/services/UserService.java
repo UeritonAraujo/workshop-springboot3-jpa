@@ -19,12 +19,19 @@ public class UserService {
 		return repository.findAll();
 	}
 	
-	public User findById(long id) {										// Para buscar objeto pelo Id
+	// Para buscar objeto pelo Id
+	public User findById(long id) {										
 		Optional<User> obj = repository.findById(id);
 		return obj.get();
 	}
 	
+	// Para acrescentar um usuário
 	public User insert(User obj) {
 		return repository.save(obj);
+	}
+	
+	// Para deletar um usuário
+	public void delete (Long id) {
+		repository.deleteById(id);
 	}
 }
