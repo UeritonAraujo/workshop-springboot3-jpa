@@ -1,6 +1,9 @@
 # Web services project with Spring Boot and JPA / Hibernate (Projeto web services com Spring Boot e JPA / Hibernate)
 
-> Status:  Lógica Aplicada 🚨
+> Status: Applied Logic  🚨
+
+> Status: Lógica Aplicada 🚨
+
 
 Creation of a database for inventory control, with:
 Categories, Products, Items, OrderItem, Order and Customer/User and Paymen
