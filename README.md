@@ -1,6 +1,6 @@
 # Web services project with Spring Boot and JPA / Hibernate (Projeto web services com Spring Boot e JPA / Hibernate)
 
-> Status: Applied Logic  🚨
+Status: Applied Logic  🚨
 
 > Status: Lógica Aplicada 🚨
 
